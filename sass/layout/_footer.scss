@@ -1,31 +1,44 @@
-.footer {
+.footer__page {
   background-color: var(--secondary-back-color);
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
-.footer-left-side {
+.footer__container {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.footer__left-side {
   display: flex;
   justify-content: space-between;
 
   flex-basis: calc(100% / 2 - var(--card-set-gap));
 }
 
-.footer-contact {
+.footer__logo {
+  display: inline-block;
+  margin-bottom: 20px;
+
+  color: var(--primary-white-color);
+}
+
+.footer__thumb {
   flex-basis: calc(100% / 2 - var(--card-set-gap));
 }
 
-.footer-social-links {
+.footer__social-links {
   flex-basis: calc(100% / 2 - var(--card-set-gap));
 }
 
-.contact-item {
+.address-list__item {
   &:not(:last-child) {
     margin-bottom: 9px;
   }
 }
 
-.location-item {
+.address-list__location {
   display: block;
   margin-bottom: 9px;
 
@@ -33,7 +46,7 @@
   font-style: normal;
 }
 
-.contact-link {
+.address-list__link {
   display: block;
   color: var(--secondary-white-color);
   font-style: normal;
@@ -46,7 +59,11 @@
   }
 }
 
-.footer-suptitle {
+.footer-right-side {
+  flex-basis: calc(100% / 2 - var(--card-set-gap));
+}
+
+.footer__text {
   margin-bottom: 20px;
 
   font-weight: bold;
@@ -55,20 +72,16 @@
   color: var(--primary-white-color);
 }
 
-.footer-right-side {
-  flex-basis: calc(100% / 2 - var(--card-set-gap));
-}
-
-.footer-subscribe-form {
+.footer__subscribe-form {
   display: flex;
 }
 
-.footer-form-label {
+.footer__form-label {
   flex-grow: 1;
   margin-right: 12px;
 }
 
-.subscribe-input {
+.footer__subscribe-input {
   width: 100%;
   height: 50px;
 
@@ -105,7 +118,7 @@
   }
 }
 
-.icon-telegram {
+.button-subcribe__icon {
   margin-left: 10px;
   vertical-align: middle;
 

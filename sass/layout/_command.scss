@@ -1,15 +1,15 @@
-.command {
+.command__content {
   background-color: var(--background-color);
 }
 
-.command-list {
+.command__list {
   display: flex;
   flex-wrap: wrap;
   margin-left: calc(-1 * var(--card-set-gap));
   margin-top: calc(-1 * var(--card-set-gap));
 }
 
-.command-list-item {
+.command__item {
   margin-left: var(--card-set-gap);
   margin-top: var(--card-set-gap);
   flex-basis: calc(100% / 4 - var(--card-set-gap));
@@ -20,11 +20,11 @@
   background-color: var(--primary-white-color);
 }
 
-.command-list-subtitle {
+.command__card {
   padding: 30px 32px;
 }
 
-.command-name {
+.command__name {
   margin-bottom: 10px;
   text-align: center;
 
@@ -33,7 +33,7 @@
   line-height: 1.19;
 }
 
-.command-specialty {
+.command__specialty {
   margin-top: 0;
   margin-bottom: 16px;
   text-align: center;

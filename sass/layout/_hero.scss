@@ -1,4 +1,4 @@
-.hero {
+.hero__content {
   margin: 0 auto;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -14,7 +14,7 @@
   max-width: 1600px;
 }
 
-.hero-title {
+.hero__title {
   max-width: 696px;
   margin-bottom: 30px;
   margin-left: auto;
@@ -27,4 +27,9 @@
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+
+.hero__button {
+  padding: 10px 32px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
